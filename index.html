@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            body{text-align:center;font-style: Arial;}
+        </style>
+    </head>
+    <body>
+    <h3>Music player</h3>
+    <div>
+        <audio  controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3"></audio>
+        <br>
+        <button onclick="playAudi0()">Play</button> 
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="stopaudio()">Stop</button>
+        </div>
+        <script>
+            let audio=document.getelementbyaudio;
+            function playAudi0(){audio.play();}  
+            function pauseAudio(){audio.pause();}
+            function stopaudio(){audio.pause(); audio.currentTime=0}
+        </script>
+    </body>
+</html>
